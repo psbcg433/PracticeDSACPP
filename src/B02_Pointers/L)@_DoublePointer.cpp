@@ -46,6 +46,6 @@ void  doublePointerMain() {
        
     }
     catch (const std::exception& e) { // Catch by reference to preserve polymorphism
-        cout << "Exception caught: " << e.what() << endl;
+        cout << "Exception caught lol: " << e.what() << endl;
     }
 }
