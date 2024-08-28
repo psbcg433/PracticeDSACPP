@@ -21,7 +21,13 @@
     <ClCompile Include="src\B02_Pointers\L01_Pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\B02_Pointers\L)%40_DoublePointer.cpp">
+    <ClCompile Include="src\B02_Pointers\L02_DoublePointer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\B02_Pointers\L03_MultiDimensionalArray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\B03_DynamicMemoryAllocation\L01_DMA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\B02_Pointers\b02pointerHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\B03_DynamicMemoryAllocation\B03Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

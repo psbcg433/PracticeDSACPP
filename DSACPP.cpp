@@ -1,8 +1,8 @@
 #include <iostream>
-#include "src/B02_Pointers/b02pointerHeader.h";
+#include "src/B03_DynamicMemoryAllocation/B03Header.h";
 using namespace std;
 
 int main()
 {
-	doublePointerMain();
+	dmamain();
 }

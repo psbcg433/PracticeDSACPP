@@ -128,12 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DSACPP.cpp" />
-    <ClCompile Include="src\B02_Pointers\L)%40_DoublePointer.cpp" />
+    <ClCompile Include="src\B02_Pointers\L02_DoublePointer.cpp" />
     <ClCompile Include="src\B02_Pointers\L01_Pointer.cpp" />
+    <ClCompile Include="src\B02_Pointers\L03_MultiDimensionalArray.cpp" />
+    <ClCompile Include="src\B03_DynamicMemoryAllocation\L01_DMA.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\B01_Arrays\b01ArrayHeader.h" />
     <ClInclude Include="src\B02_Pointers\b02pointerHeader.h" />
+    <ClInclude Include="src\B03_DynamicMemoryAllocation\B03Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

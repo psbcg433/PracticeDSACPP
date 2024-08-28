@@ -2,3 +2,4 @@
 
 void pointerMain();
 void doublePointerMain();
+void  mdArrayPointerMain();
