@@ -1,8 +1,8 @@
 #include <iostream>
+#include "src/B02_Pointers/b02pointerHeader.h";
 using namespace std;
 
 int main()
 {
-	cout << "Hello world, Visual Studio is Connected to Github";
-	return 0;
+	doublePointerMain();
 }
