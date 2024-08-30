@@ -30,6 +30,12 @@
     <ClCompile Include="src\B03_DynamicMemoryAllocation\L01_DMA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\B04_Recursion\l01_recursionFoundation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\B04_Recursion\l02_doublerecursion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\B01_Arrays\b01ArrayHeader.h">
@@ -39,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\B03_DynamicMemoryAllocation\B03Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\B04_Recursion\RecursionHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
