@@ -54,35 +54,70 @@ int maxinarray(int* arr, int indx, int len)
 		return *(arr+indx);
 	int misa = maxinarray(arr, indx + 1, len);
 	return misa >= *(arr + indx) ? misa : *(arr + indx);
-
-	
 }
 
-void indxofoccurance(int* arr, int indx, int len, int value)
+int* allindexoccurance(int* arr, int indx, int len, int value,int indxcnt)
 {
-	if (indx == len) {
-		return;
-	}
-	if (*(arr + indx) == value)
+	
+	if (indx == len)
 	{
-		cout << "Occured at index: "<< indx << endl;
-
+		return new int[indxcnt];
 	}
-	indxofoccurance(arr, indx + 1, len, value);
-	
+	int* indxarr;
+	if (*(arr+indx) == value)
+	{
+		indxarr = allindexoccurance(arr, indx + 1, len, value, indxcnt + 1);
+		*(indxarr + indxcnt) = indx;
+		
+	}
+	else
+	{
+		indxarr=allindexoccurance(arr, indx + 1, len, value, indxcnt);
+		
+	}
+	return indxarr;
+}
+
+int firstindexoccurance(int* arr, int indx, int len, int value)
+{
+	if (indx == len)
+		return -1;
+	else if (*(arr + indx) == value)
+		return indx;
+	else
+		return firstindexoccurance(arr, indx + 1, len, value);
 
 }
-void firstindexoccurance(int* arr, int indx, int len, int value)
-{
 
+
+int lastindexoccurence(int* arr, int indx, int len, int value)
+{
+	if (indx == len)
+		return -1;
+	int lastindex = lastindexoccurence(arr, indx + 1, len, value);
+	if (lastindex == -1)
+	{
+		if (*(arr + indx) == value)
+		{
+			return indx;
+		}
+		else
+		{
+			return -1;
+		}
+	}
 }
 
 
 void l02recursionmain()
 {
-	int arr[] = { 1,2,3,2,3 }; 
+	int arr[] = { 1,2,3,2,3 };
 	int size = sizeof(arr) / sizeof(arr[0]);
-	
-	indxofoccurance(arr, 0,size,3);
+	int* indxarr = allindexoccurance(arr, 0, size, 2, 0);
+	cout << "Value  found at indices: ";
+	for (int i = 0; i <2 ; i++) {
+		cout << indxarr[i] << " ";
+	}
+	cout << endl;
 
 }
