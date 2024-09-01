@@ -36,9 +36,12 @@
     <ClCompile Include="src\B04_Recursion\l02_doublerecursion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\B01_STL\l01_STL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\B01_Arrays\b01ArrayHeader.h">
+    <ClInclude Include="src\B01_STL\b01stlheader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\B02_Pointers\b02pointerHeader.h">
